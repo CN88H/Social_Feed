@@ -1,3 +1,4 @@
+import CustomButton from "../Button/Button";
 
 const DisplayPosts = (props) => {
     return ( 
@@ -12,7 +13,9 @@ const DisplayPosts = (props) => {
                 <tr>
                     <td>{entry.name }</td>
                     <td>{entry.post}</td>
-                    <td>{'like or dislike?'}</td>
+                    <td>
+                        <CustomButton message="Like"/>
+                    </td>
                 </tr>
                 );
             })}
